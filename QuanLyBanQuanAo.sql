@@ -14,22 +14,22 @@ CREATE TABLE LoaiSP(
 MaLoaiSP VARCHAR(20) PRIMARY KEY,
 TenLoaiSP NVARCHAR(30),
 )
-INSERT INTO LoaiSP VALUES('001', 'Áo khoác')
-INSERT INTO LoaiSP VALUES('002', 'Quần dài')
+INSERT INTO LoaiSP VALUES('001', N'Áo khoác')
+INSERT INTO LoaiSP VALUES('002', N'Quần dài')
 
 CREATE TABLE ChatLieu(
 MaChatLieu VARCHAR(20) PRIMARY KEY,
 TenChatLieu NVARCHAR(20)
 )
-INSERT INTO ChatLieu VALUES('001', 'Vải cotton')
-INSERT INTO ChatLieu VALUES('002', 'Vải len')
+INSERT INTO ChatLieu VALUES('001', N'Vải cotton')
+INSERT INTO ChatLieu VALUES('002', N'Vải len')
 
 CREATE TABLE MauSac(
 MaMauSac VARCHAR(20) PRIMARY KEY,
 TenMauSac NVARCHAR(20)
 )
-INSERT INTO MauSac VALUES('001', 'Màu trắng')
-INSERT INTO MauSac VALUES('002', 'Màu đen')
+INSERT INTO MauSac VALUES('001', N'Màu trắng')
+INSERT INTO MauSac VALUES('002', N'Màu đen')
 
 CREATE TABLE Size(
 MaSize VARCHAR(20) PRIMARY KEY,
@@ -44,8 +44,8 @@ CREATE TABLE SanPham(
 MaSanPham VARCHAR(20) PRIMARY KEY,
 TenSanPham NVARCHAR(20)
 )
-INSERT INTO SanPham VALUES('001', 'Quần jogger')
-INSERT INTO SanPham VALUES('002', 'Áo phao')
+INSERT INTO SanPham VALUES('001', N'Quần jogger')
+INSERT INTO SanPham VALUES('002', N'Áo phao')
 
 CREATE TABLE NhanVien(
 MaNhanVien VARCHAR(20) PRIMARY KEY,
@@ -57,8 +57,8 @@ ChucVu NVARCHAR(20),
 DiaChi NVARCHAR(50),
 TrangThai INT
 )
-INSERT INTO NhanVien VALUES('001', 'Đào', 'Thị', 'Ngọc', '0389976312', 'Nhân viên bán hàng', 'Hà Nội', 0)
-INSERT INTO NhanVien VALUES('002', 'Hải', 'Nam', 'Đức', '0176657446', 'Nhân viên bán hàng', 'Hải Phòng', 1)
+INSERT INTO NhanVien VALUES('001', N'Đào', N'Thị', N'Ngọc', '0389976312', N'Nhân viên bán hàng', N'Hà Nội', 0)
+INSERT INTO NhanVien VALUES('002', N'Hải', N'Nam', N'Đức', '0176657446', N'Nhân viên bán hàng', N'Hải Phòng', 1)
 
 CREATE TABLE ChiTietSanPham(
 MaCTSP VARCHAR(20) PRIMARY KEY,
@@ -85,8 +85,8 @@ SDTKH INT,
 DiaChi NVARCHAR(50),
 TrangThai INT
 )
-INSERT INTO HoaDon VALUES('001', '001', '2019-10-16', '2019-10-16', 250000, 0383477676, 'Hà Nội', 0)
-INSERT INTO HoaDon VALUES('002', '002', '2019-9-17', '2019-9-20', 300000, 0993323765, 'Hà Nội', 0)
+INSERT INTO HoaDon VALUES('001', '001', '2019-10-16', '2019-10-16', 250000, 0383477676, N'Hà Nội', 0)
+INSERT INTO HoaDon VALUES('002', '002', '2019-9-17', '2019-9-20', 300000, 0993323765, N'Hà Nội', 0)
 
 CREATE TABLE HoaDonChiTiet(
 MaHoaDon VARCHAR(20) FOREIGN KEY REFERENCES HoaDon(MaHoaDon),
@@ -98,8 +98,8 @@ TenSize VARCHAR(10),
 DonGia DECIMAL,
 TrangThai INT
 )
-INSERT INTO HoaDonChiTiet VALUES('001', '001', '001', 'Áo phao', 1, 'XL', 250000, 0)
-INSERT INTO HoaDonChiTiet VALUES('002', '002', '001', 'Quần jogger', 1, 'XXL', 300000, 0)
+INSERT INTO HoaDonChiTiet VALUES('001', '001', '001', N'Áo phao', 1, 'XL', 250000, 0)
+INSERT INTO HoaDonChiTiet VALUES('002', '002', '001', N'Quần jogger', 1, 'XXL', 300000, 0)
 
 CREATE TABLE DoiTra(
 MaDoiTra VARCHAR(20) PRIMARY KEY,
@@ -108,5 +108,5 @@ TenSP NVARCHAR(30),
 SoLuong INT,
 LyDoDoiTra NVARCHAR(50)
 )
-INSERT INTO DoiTra VALUES('001', '001', 'Áo phao', 1, 'Không đúng kích cỡ')
-INSERT INTO DoiTra VALUES('002', '002', 'Quần jegger', 1, 'Giao sai hàng')
+INSERT INTO DoiTra VALUES('001', '001', N'Áo phao', 1, N'Không đúng kích cỡ')
+INSERT INTO DoiTra VALUES('002', '002', N'Quần jogger', 1, N'Giao sai hàng')
