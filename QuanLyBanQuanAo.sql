@@ -2,7 +2,6 @@
 USE QuanLyBanQuanAo
 GO
 
-drop database QuanLyBanQuanAo
 CREATE TABLE TaiKhoan(
 TaiKhoan NVARCHAR(30) PRIMARY KEY,
 Matkhau NVARCHAR(30),
