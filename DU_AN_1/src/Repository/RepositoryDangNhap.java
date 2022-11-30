@@ -8,6 +8,7 @@ import Utilites.DBConnect;
 import ViewModel.ViewModelTaiKhoan;
 import java.util.ArrayList;
 import java.sql.*;
+import java.util.List;
 
 public class RepositoryDangNhap {
 
@@ -16,20 +17,18 @@ public class RepositoryDangNhap {
         try {
             Connection conn = DBConnect.getConnection();
 
-            String sql = "SELECT TOP (100) [MaTK]\n"
-                    + "      ,[TenTK]\n"
+            String sql = "SELECT [TaiKhoan]\n"
                     + "      ,[Matkhau]\n"
-                    + "      ,[Chucvu]\n"
-                    + "  FROM [QuanLyBanQuanAo].[dbo].[TaiKhoan]";
+                    + "  FROM [dbo].[TaiKhoan]";
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.execute();
             ResultSet rs = ps.getResultSet();
             while (rs.next() == true) {
-                String MaTK = rs.getString(1);
-                String TenTK = rs.getString(2);
-                String MatKhau = rs.getString(3);
-                String ChucVu = rs.getString(4);
-                ViewModelTaiKhoan taikhoan = new ViewModelTaiKhoan(MaTK, TenTK, MatKhau, ChucVu);
+              
+                String TenTK = rs.getString(1);
+                String MatKhau = rs.getString(2);
+
+                ViewModelTaiKhoan taikhoan = new ViewModelTaiKhoan(TenTK, MatKhau);
                 list.add(taikhoan);
             }
         } catch (SQLException e) {
@@ -39,18 +38,18 @@ public class RepositoryDangNhap {
         return list;
     }
 
-    public void update(String ma, ViewModelTaiKhoan tk) {
+    public void update(String TaiKhoan, ViewModelTaiKhoan tk) {
         try {
-            String sql = " update TaiKhoan set Matkhau = ? where MaTK = ?";
-            Connection conn = DBConnect.getConnection();         
+            String sql = " update TaiKhoan set Matkhau = ? where TaiKhoan = ?";
+            Connection conn = DBConnect.getConnection();
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, tk.getMatKhau());
-            ps.setString(2, ma);
+            ps.setString(2, TaiKhoan);
             ps.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();
         }
-        
+
     }
 
     public static void main(String[] args) throws SQLException {
