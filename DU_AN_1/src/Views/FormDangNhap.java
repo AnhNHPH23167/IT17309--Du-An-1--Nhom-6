@@ -6,7 +6,11 @@ import java.util.ArrayList;
 import javax.swing.JOptionPane;
 
 public class FormDangNhap extends javax.swing.JFrame {
+<<<<<<< HEAD
 //    private Hide ;
+=======
+
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     private RepositoryDangNhap rp = new RepositoryDangNhap();
     private ArrayList<ViewModelTaiKhoan> list;
 
@@ -17,11 +21,15 @@ public class FormDangNhap extends javax.swing.JFrame {
             e.printStackTrace();
         }
         initComponents();
+<<<<<<< HEAD
         this.setLocationRelativeTo(null);
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         FillData();
     }
 
     public void FillData() {
+<<<<<<< HEAD
         
         for (int i = 0; i < list.size(); i++) {
             
@@ -54,6 +62,40 @@ public class FormDangNhap extends javax.swing.JFrame {
             
         }
         
+=======
+
+        for (int i = 0; i < list.size(); i++) {
+
+            String ten = list.get(i).getTenTK();
+
+            String matkhau = list.get(i).getMatKhau();
+
+            if (txtTaiKhoan.getText().equalsIgnoreCase(list.get(i).getTenTK())) {
+
+                if (txtMatKhau.getText().equalsIgnoreCase(list.get(i).getMatKhau())) {
+
+                    FormTrangChu_NhanVien form = new FormTrangChu_NhanVien();
+
+                    form.setVisible(true);
+
+                } else {
+
+                    System.out.println("Sai Mat Khau");
+
+                    return;
+
+                }
+
+            } else {
+
+                System.out.println("Sai Tai Khoan");
+                return;
+
+            }
+
+        }
+
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     }
 
     @SuppressWarnings("unchecked")

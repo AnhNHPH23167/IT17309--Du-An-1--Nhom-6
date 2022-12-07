@@ -38,6 +38,7 @@ public class RepositoryDangNhap {
         return list;
     }
 
+<<<<<<< HEAD
     public void update(String ma, ViewModelTaiKhoan tk) {
         try {
             String sql = " update TaiKhoan set Matkhau = ? where MaTK = ?";
@@ -45,6 +46,15 @@ public class RepositoryDangNhap {
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, tk.getMatKhau());
             ps.setString(2, ma);
+=======
+    public void update(String TaiKhoan, ViewModelTaiKhoan tk) {
+        try {
+            String sql = " update TaiKhoan set Matkhau = ? where TaiKhoan = ?";
+            Connection conn = DBConnect.getConnection();
+            PreparedStatement ps = conn.prepareStatement(sql);
+            ps.setString(1, tk.getMatKhau());
+            ps.setString(2, TaiKhoan);
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
             ps.executeUpdate();
         } catch (Exception e) {
             e.printStackTrace();

@@ -4,8 +4,11 @@
  */
 package ViewModel;
 
+<<<<<<< HEAD
 import java.util.Date;
 
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
 /**
  *
  * @author LamNL
@@ -13,6 +16,7 @@ import java.util.Date;
 public class HoaDonViewModel {
 
     private String MaHoaDon;
+<<<<<<< HEAD
     private String MaNhanVien;
     private Date NgayTao;
     private Date NgayThanhToan;
@@ -20,10 +24,19 @@ public class HoaDonViewModel {
     private int SDTKH;
     private String DiaChi;
     private int TrangThai;
+=======
+    private String NgayTao;
+    private String NgayThanhToan;
+    private String ThanhTien;
+    private String SDTKH;
+    private String DiaChi;
+    private String TrangThai;
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
 
     public HoaDonViewModel() {
     }
 
+<<<<<<< HEAD
     public HoaDonViewModel(String MaHoaDon, String MaNhanVien, Date NgayTao, Date NgayThanhToan, double ThanhTien, int SDTKH, String DiaChi, int TrangThai) {
         this.MaHoaDon = MaHoaDon;
         this.MaNhanVien = MaNhanVien;
@@ -101,5 +114,7 @@ public class HoaDonViewModel {
     
     
 
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     
 }

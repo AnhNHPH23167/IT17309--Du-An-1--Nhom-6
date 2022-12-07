@@ -28,11 +28,19 @@ public class FormQuenMK extends javax.swing.JFrame {
 
                 String matkhaumoi = txtMatKhauMoi.getText();
 
+<<<<<<< HEAD
 //                String ma = list.get(i).getMaTK();
 
 //                ViewModelTaiKhoan taikhoan = new ViewModelTaiKhoan(
 
 //                rp.update(ma, taikhoan);
+=======
+                String ma = list.get(i).getMaTK();
+
+                ViewModelTaiKhoan taikhoan = new ViewModelTaiKhoan(ma, "", matkhau, "");
+
+                rp.update(ma, taikhoan);
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
 
                 System.out.println("Mat Khau Chinh Xac");
 

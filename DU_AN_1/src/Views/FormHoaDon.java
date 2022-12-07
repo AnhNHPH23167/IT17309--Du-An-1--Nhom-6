@@ -4,6 +4,7 @@
  */
 package Views;
 
+<<<<<<< HEAD
 import DoMain.HoaDon;
 import Service.ServiceHoaDon;
 import ViewModel.HoaDonViewModel;
@@ -12,20 +13,26 @@ import java.text.SimpleDateFormat;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
 
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
 /**
  *
  * @author LamNL
  */
 public class FormHoaDon extends javax.swing.JFrame {
 
+<<<<<<< HEAD
     private ServiceHoaDon hd_service = new ServiceHoaDon();
     DefaultTableModel defaultTableModel;
 
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     /**
      * Creates new form FormHoaDon
      */
     public FormHoaDon() {
         initComponents();
+<<<<<<< HEAD
         this.hd_service = new ServiceHoaDon();
         loadData();
     }
@@ -38,6 +45,8 @@ public class FormHoaDon extends javax.swing.JFrame {
                 tb_danhsach.getRowCount() + 1, hdvm.getMaHoaDon(), hdvm.getMaNhanVien(), hdvm.getNgayTao(), hdvm.getNgayThanhToan(), hdvm.getThanhTien(), hdvm.getSDTKH(), hdvm.getDiaChi()
             });
         }
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     }
 
     /**
@@ -52,12 +61,21 @@ public class FormHoaDon extends javax.swing.JFrame {
         jPanel1 = new javax.swing.JPanel();
         pane3 = new javax.swing.JPanel();
         jScrollPane4 = new javax.swing.JScrollPane();
+<<<<<<< HEAD
         tb_danhsach = new javax.swing.JTable();
         jLabel1 = new javax.swing.JLabel();
+=======
+        jTable3 = new javax.swing.JTable();
+        jScrollPane5 = new javax.swing.JScrollPane();
+        jTable4 = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
+<<<<<<< HEAD
         txt_mahoadon = new javax.swing.JTextField();
         txt_ngaytao = new javax.swing.JTextField();
         txt_ngaythanhtoan = new javax.swing.JTextField();
@@ -93,11 +111,64 @@ public class FormHoaDon extends javax.swing.JFrame {
             }
         });
         jScrollPane4.setViewportView(tb_danhsach);
+=======
+        jTextField1 = new javax.swing.JTextField();
+        jTextField2 = new javax.swing.JTextField();
+        jTextField3 = new javax.swing.JTextField();
+        jTextField4 = new javax.swing.JTextField();
+        jLabel9 = new javax.swing.JLabel();
+        jTextField5 = new javax.swing.JTextField();
+        jLabel10 = new javax.swing.JLabel();
+        jTextField6 = new javax.swing.JTextField();
+        jTextField8 = new javax.swing.JTextField();
+        jTextField9 = new javax.swing.JTextField();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel12 = new javax.swing.JLabel();
+        jButton1 = new javax.swing.JButton();
+        jButton2 = new javax.swing.JButton();
+        jButton3 = new javax.swing.JButton();
+        jButton5 = new javax.swing.JButton();
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+        jTable3.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null}
+            },
+            new String [] {
+                "STT", "Ma", "NgayTao", "NgayThanhToan", "ThanhTien", "SDT", "DiaChi"
+            }
+        ));
+        jScrollPane4.setViewportView(jTable3);
+
+        jTable4.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null},
+                {null, null, null, null, null}
+            },
+            new String [] {
+                "STT", "MaHoaDon", "TenSanPham", "SoLuong", "DonGia"
+            }
+        ));
+        jScrollPane5.setViewportView(jTable4);
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
 
         jLabel1.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(0, 102, 255));
         jLabel1.setText("Hoa Don");
 
+<<<<<<< HEAD
+=======
+        jLabel2.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        jLabel2.setForeground(new java.awt.Color(0, 102, 255));
+        jLabel2.setText("Hoa Don Chi Tiet");
+
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         jLabel3.setText("Ma Hoa Don");
 
         jLabel4.setText("Ngay Tao");
@@ -110,6 +181,7 @@ public class FormHoaDon extends javax.swing.JFrame {
 
         jLabel10.setText("Dia Chi");
 
+<<<<<<< HEAD
         btn_xuathoadon.setText("Xuat Hoa Don");
 
         btn_taohoadon.setText("Tao Hoa Don");
@@ -124,12 +196,26 @@ public class FormHoaDon extends javax.swing.JFrame {
         jLabel2.setText("Ma Nhan Vien");
 
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+=======
+        jLabel11.setText("Ten San Pham");
+
+        jLabel12.setText("So Luong");
+
+        jButton1.setText("Thanh Toan");
+
+        jButton2.setText("Xuat Hoa Don");
+
+        jButton3.setText("Tao Hoa Don");
+
+        jButton5.setText("Tim Kiem");
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
 
         javax.swing.GroupLayout pane3Layout = new javax.swing.GroupLayout(pane3);
         pane3.setLayout(pane3Layout);
         pane3Layout.setHorizontalGroup(
             pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pane3Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(93, 93, 93)
                 .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, pane3Layout.createSequentialGroup()
@@ -173,10 +259,59 @@ public class FormHoaDon extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(jScrollPane4)
                 .addContainerGap())
+=======
+                .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pane3Layout.createSequentialGroup()
+                        .addGap(143, 143, 143)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pane3Layout.createSequentialGroup()
+                                .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                .addGap(67, 67, 67))
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pane3Layout.createSequentialGroup()
+                                .addComponent(jLabel1)
+                                .addGap(237, 237, 237))))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, pane3Layout.createSequentialGroup()
+                        .addContainerGap()
+                        .addComponent(jLabel2)
+                        .addGap(229, 229, 229)))
+                .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pane3Layout.createSequentialGroup()
+                        .addComponent(jButton5)
+                        .addGap(18, 18, 18)
+                        .addComponent(jButton3)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(jButton2)
+                        .addContainerGap(53, Short.MAX_VALUE))
+                    .addGroup(pane3Layout.createSequentialGroup()
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel3)
+                            .addComponent(jLabel11)
+                            .addComponent(jLabel4)
+                            .addComponent(jLabel5)
+                            .addComponent(jLabel12)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel10))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 64, Short.MAX_VALUE)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, 191, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jButton1))
+                        .addGap(18, 18, 18))))
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         );
         pane3Layout.setVerticalGroup(
             pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(pane3Layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(14, 14, 14)
                 .addComponent(jLabel1)
                 .addGap(27, 27, 27)
@@ -214,12 +349,64 @@ public class FormHoaDon extends javax.swing.JFrame {
                 .addGap(55, 55, 55)
                 .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(69, Short.MAX_VALUE))
+=======
+                .addGap(18, 18, 18)
+                .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel1)
+                    .addComponent(jButton3)
+                    .addComponent(jButton2)
+                    .addComponent(jButton5))
+                .addGap(20, 20, 20)
+                .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(pane3Layout.createSequentialGroup()
+                        .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 155, Short.MAX_VALUE)
+                        .addComponent(jScrollPane5, javax.swing.GroupLayout.PREFERRED_SIZE, 160, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(38, 38, 38))
+                    .addGroup(pane3Layout.createSequentialGroup()
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jLabel3)
+                            .addComponent(jTextField1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel11))
+                        .addGap(15, 15, 15)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel4))
+                        .addGap(6, 6, 6)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField4, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel5))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField5, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel12))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField6, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel6))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField8, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel9)
+                            .addComponent(jLabel2))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(pane3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(jTextField9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel10))
+                        .addGap(55, 55, 55)
+                        .addComponent(jButton1)
+                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+<<<<<<< HEAD
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addContainerGap()
                 .addComponent(pane3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
@@ -231,6 +418,22 @@ public class FormHoaDon extends javax.swing.JFrame {
                 .addContainerGap()
                 .addComponent(pane3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+=======
+            .addGap(0, 1036, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(pane3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+        );
+        jPanel1Layout.setVerticalGroup(
+            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 491, Short.MAX_VALUE)
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addContainerGap()
+                    .addComponent(pane3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addContainerGap()))
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -238,8 +441,13 @@ public class FormHoaDon extends javax.swing.JFrame {
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
+=======
+                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -249,6 +457,7 @@ public class FormHoaDon extends javax.swing.JFrame {
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
+<<<<<<< HEAD
     private void btn_taohoadonActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btn_taohoadonActionPerformed
         // TODO add your handling code here:
         HoaDon hd = getForm();
@@ -297,6 +506,8 @@ public class FormHoaDon extends javax.swing.JFrame {
         return hd;
         
     }
+=======
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     /**
      * @param args the command line arguments
      */
@@ -333,12 +544,23 @@ public class FormHoaDon extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JButton btn_taohoadon;
     private javax.swing.JButton btn_timkiem;
     private javax.swing.JButton btn_xuathoadon;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
+=======
+    private javax.swing.JButton jButton1;
+    private javax.swing.JButton jButton2;
+    private javax.swing.JButton jButton3;
+    private javax.swing.JButton jButton5;
+    private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel10;
+    private javax.swing.JLabel jLabel11;
+    private javax.swing.JLabel jLabel12;
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -347,6 +569,7 @@ public class FormHoaDon extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JScrollPane jScrollPane4;
+<<<<<<< HEAD
     private javax.swing.JPanel pane3;
     private javax.swing.JTable tb_danhsach;
     private javax.swing.JTextField txt_diachi;
@@ -355,5 +578,19 @@ public class FormHoaDon extends javax.swing.JFrame {
     private javax.swing.JTextField txt_ngaythanhtoan;
     private javax.swing.JTextField txt_sdt;
     private javax.swing.JTextField txt_thanhtien;
+=======
+    private javax.swing.JScrollPane jScrollPane5;
+    private javax.swing.JTable jTable3;
+    private javax.swing.JTable jTable4;
+    private javax.swing.JTextField jTextField1;
+    private javax.swing.JTextField jTextField2;
+    private javax.swing.JTextField jTextField3;
+    private javax.swing.JTextField jTextField4;
+    private javax.swing.JTextField jTextField5;
+    private javax.swing.JTextField jTextField6;
+    private javax.swing.JTextField jTextField8;
+    private javax.swing.JTextField jTextField9;
+    private javax.swing.JPanel pane3;
+>>>>>>> 9b3ee9e9acf9d0bd035fa00613f483825c6744bb
     // End of variables declaration//GEN-END:variables
 }
